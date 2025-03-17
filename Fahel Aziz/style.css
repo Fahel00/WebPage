@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --font-family: 'Big Shoulders', sans-serif;
+  --font-family2: 'Poppins', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family), sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header-content h1 {
+  font-family: var(--font-family2);
+  font-style: italic;
+}
+
+/* Barra de Navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 250px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Cabeçalho */
+.header {
+  background: url('images/header-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #914dff;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Barra Lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.sidebar h3 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+/* Conteúdo Principal */
+main {
+  margin-left: 270px;
+  padding: 2rem;
+}
+
+.about, .albums {
+  margin-bottom: 2rem;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.album-card {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.album-card img {
+  width: 100%;
+  height: auto;
+}
+
+.album-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.album-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  padding: 1rem;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.placement-grid, .kit-grid, .samplepack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
